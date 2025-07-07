@@ -1,0 +1,549 @@
+﻿<!doctype html>
+
+<html class="no-js" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!-- 设置字符编码为 UTF-8 -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><!-- 设置视口，确保页面在不同设备上正确显示 -->  
+
+        <!-- 此处为页面标题-->
+        <title>Honge's Home</title>  
+		
+        <!-- 此处为页面描述 -->
+		<meta name="description" content="宏哥主页-http://vske.top">
+
+        <!-- 禁用屏幕缩放-->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        <!-- 将favicon.ico和apple touch图标放在根目录中 -->
+		<!-- favicon图标 -->
+        <link rel="shortcut icon" href="icon/logo.png">
+        <!-- 初始化程序 -->
+        <link rel="stylesheet" href="./css/normalize.css">        
+        
+        <!-- Web字体和Web图标 -->
+        <link rel="stylesheet" href="./css/pageloader.css">
+        <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
+        <link rel="stylesheet" href="./fonts/asap/stylesheet.css">
+        <link rel="stylesheet" href="./css/ionicons.min.css">
+        
+        <!-- 程序CSS样式 -->
+        <link rel="stylesheet" href="./css/foundation.min.css">
+        <link rel="stylesheet" href="./js/vendor/jquery.fullPage.css">
+        <link rel="stylesheet" href="./js/vegas/vegas.min.css">
+        
+		<!-- 主要CSS文件 -->
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main_responsive.css">
+        <link rel="stylesheet" href="./css/style-font1.css">
+        <!-- 主要JS逻辑文件 -->
+        <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
+		
+        <!-- 播放器加载 -->
+        <link rel="stylesheet" href="main/css/music.css"/><!-- 引入音乐播放器的 CSS 样式 -->   
+        <script src="main/js/jquery.min.js"></script><!-- 引入 jQuery 库 -->   
+        <script src='main/js/music.js'></script><!-- 引入主 JavaScript 文件 -->    
+        <script src="music/musicList.js"></script><!-- 引入音乐列表文件 --> 
+    </head>
+    <body id="menu" class="alt-bg">    
+        <!-- 页面加载器 -->
+        <div class="page-loader" id="page-loader">
+            <div><i class="ion ion-loading-d"></i><p>加载中</p></div>
+        </div>		
+        <!-- 开始站点标题菜单 -->
+		<!-- 为材质设计样式添加“材质”类 -->
+		<header class="header-top">
+        <!--<header class="header-top material">-->
+			<div class="logo">
+				<a href="#home">
+					<img src="icon/logo_large.png" alt="Logo HONGGE"><!-- 此处图标和名称 -->
+				</a>  
+			</div>
+            <div class="menu clearfix">
+                <a href="#about-us">关于</a>
+				<!-- 在此处添加类似于“关于”的其他菜单 -->
+                <a href="#contact">合作</a>
+            </div>
+		</header>
+        <!-- 站点标题菜单结束-->
+        
+        <!-- 开始于左侧的快速导航图标 -->
+		<nav class="quick-link count-6 nav-left">
+			<ul id="qmenu">
+				<li data-menuanchor="home">
+					<a href="#home" class=""><i class="icon ion ion-home"></i>
+					</a>
+					<span class="title">首页</span>
+				</li>
+				<li data-menuanchor="when">
+					<a href="#when" class=""><i class="icon ion ion-android-alarm"></i>
+					</a>
+					<span class="title">倒计时</span>
+				</li>
+				<li data-menuanchor="register">
+					<a href="#register"><i class="icon ion ion-compose"></i>
+					</a>
+					<span class="title">留言</span>
+				</li>
+				<li data-menuanchor="about-us">
+					<a href="#about-us"><i class="icon ion ion-android-information"></i>
+					</a>
+					<span class="title">关于</span>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="#contact"><i class="icon ion ion-android-call"></i>
+					</a>
+					<span class="title">合作</span>
+				</li>
+				<li data-menuanchor="contact">
+					<a href="#contact/message"><i class="icon ion ion-email"></i>
+					</a>
+					<span class="title">发信</span>
+				</li>
+			</ul>
+		</nav>
+        <!-- 左侧快速导航图标结束 -->
+        
+
+
+        <!-- 开始现场覆盖 -->
+        <div class="page-cover" id="home">
+            <!-- 封面背景 -->
+        <!--<div class="cover-bg pos-abs full-size bg-img" data-image-src="img/background-4.jpg"></div>
+			
+            <!-- 取消下面的注释‘!’以使用幻灯片背景 -->
+        <div class="cover-bg pos-abs full-size slide-show">
+				<i class='img' data-src='./img/background-1.jpg'></i>
+				<i class='img' data-src='./img/background-2.jpg'></i>
+				<i class='img' data-src='./img/background-3.jpg'></i>
+				<i class='img' data-src='./img/background-4.jpg'></i>
+				<i class='img' data-src='./img/background-5.jpg'></i>
+				<i class='img' data-src='./img/background-6.jpg'></i>
+				<i class='img' data-src='./img/background-7.jpg'></i>
+				<i class='img' data-src='./img/background-8.jpg'></i>
+		</div>
+            <!-- 幻灯片结束背景 -->
+            
+            <!--开始静态视频bg-取消下面的注释‘!’以使用视频作为背景-->
+            <!--<div id="container" class="video-container show-for-medium-up">
+			<!--<div id=“container”class=“高等以上视频容器展示">
+                <video autoplay="autoplay" loop="loop" autobuffer="autobuffer" muted="muted"
+                       width="640" height="360">
+                    <source src="img/video/flower_loop3.mp4" type="video/mp4">
+                </video>
+            </div>-->
+            <!--静态视频bg结束-->
+			
+			<!-- 取消下面的注释‘!’以使用纯色作为背景 -->
+            <!--<div class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(51, 2, 48, 0.12)"></div>-->
+			
+			<!-- 取消下面的注释‘!’以使用纯色作为过滤器 -->
+            <!--<div class="cover-bg-mask pos-abs full-size bg-color" data-bgcolor="rgba(62, 24, 219, 0.41)"></div>-->
+            
+        </div>
+        <!--站点封面结束 -->
+        
+        <!-- 在此开始网站主要内容内容 -->
+        <main class="page-main" id="mainpage">             
+            
+			<!-- 主页开始 -->
+			<div class="section page-home page page-cent" id="s-home">
+				
+				<!-- logo标志 -->
+				<div class="logo-container">
+					<img class="h-logo" src="icon/logo.png" alt="Logo">
+				</div>
+
+
+
+				<!-- 所容纳之物 -->
+				<section class="content">					
+					<header class="header">
+						<div class="h-left">
+							<h2>❤️期待 <strong>相遇</strong></h2>
+						</div>
+						<div class="h-right">
+							<h3>Honge's<br>网络传媒</h3>
+							<h4 class="subhead"><a href="#when">为了更美好的邂逅。</a></h4>
+						</div>
+        <!-- 诗词一言 -->
+        <div class="hitokoto">
+            <p id="hitokoto">😀 Loading...</p>——「<span id="from">😀 Loading...</span>」
+        </div>        
+        <!-- 诗词API调用脚本 -->
+        <script async>
+            fetch('https://v1.hitokoto.cn')
+            .then(function (res){
+                return res.json();
+            })
+            .then(function (data) {
+                var hitokoto = document.getElementById('hitokoto');
+                hitokoto.innerText = data.hitokoto;
+                var from = document.getElementById('from');
+                from.innerText = data.from;
+            })
+            .catch(function (err) {
+                console.error(err);
+            })
+        </script>
+		<!--诗词一言结束-->	
+					</header>
+				</section>				
+				<!-- 向下滚动按钮 -->
+                <footer class="p-footer p-scrolldown">
+                    <a href="#when">
+                        <div class="arrow-d">
+							<div class="before">Page&nbsp;down</div>
+							<div class="after">ComeBack</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+			</div>
+			
+			<!-- 主页结束 -->
+            
+            <!-- 计时器页面的开始 -->
+            <div class="section page-when page page-cent" id="s-when">
+                <section class="content">
+                    <div class="clock clock-countdown">
+			<!-- 添加倒计时规则请设置，便会从当前时间开始计算：data-date="01/29/2026" 规则：月/日/年 -->
+						<div class="site-config"
+							 data-date="01/29/2026"  
+							 data-date-timezone="+0"
+							 ></div>
+						<header class="header">
+							倒计时开启 <strong>即将揭秘</strong>
+						</header>
+                        <div class="elem-left">
+                            <div class="digit hours">00</div>
+                            <div class="text">小时</div>
+                        </div>						
+                        <div class="elem-center">
+							<!-- 顶部可选文字或图像徽标-->
+							<!--<span class="text top">here in</span>-->
+							<!--<span class=“text top”>此处位于</span>-->
+							<!-- 顶部可选徽标-->
+							<span class="text top"><img class="img" alt="Logo" src="icon/logo_large.png"></span>
+                            <div class="digit days">0</div>
+                            <div class="text">天</div>
+                        </div>
+                        <div class=" elem-right">
+                            <div class="digit minutes">00</div>
+                            <div class="text">分钟</div>
+                        </div>
+						
+						<!-- 此处的第二个旋钮-->
+						<div class="second">
+							<input class="knob container" 
+								   id="second-knob"
+								  	data-width="400"
+								  	data-height="400"
+								 data-displayInput=false
+									data-fgColor="#fff"
+									data-bgColor="rgba(255,255,255,0)"
+									data-thickness=".07"
+								 	value="0"
+									data-displayPrevious=true
+								   data-max="6000"
+								   />
+						</div>
+                    </div>                   
+                    
+                </section>                
+                <footer class="p-footer p-scrolldown">
+                    <a href="#register">
+                        <div class="arrow-d">
+							<div class="before">Page&nbsp;down</div>
+							<div class="after">ComeBack</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- 计时器页面结束-->
+            
+            <!-- 开始通知页面-->
+            <div class="section page-register page page-cent"  id="s-register">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>通知 <i class="ion ion-compose"></i></h3> 
+                    </header>
+                    <div>
+                        <form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
+                            <p class="invite center">项目上线之初，将会发邮件给您</p>
+							<div class="fields clearfix">
+								<div class="input">
+									<label for="reg-email">您的邮箱 </label>
+									<input id="reg-email" class="email_f"  name="email" type="email" required placeholder="邮箱地址：例如：您的QQ号@qq.com" data-validation-type="email"></div>
+								<div class="buttons">
+									<button id="submit-email" class="button email_b" name="submit_email">提交</button>
+								</div>
+							</div>
+                            
+                            <p class="email-ok invisible"><strong>感谢</strong> 您的订阅~！</p>
+                        </form>
+                    </div>
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#about-us">
+                        <div class="arrow-d">
+							<div class="before">Page&nbsp;down</div>
+							<div class="after">ComeBack</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- 通知页结束-->
+            
+            <!-- 关于我们页面的开始 -->
+            <div class="section page-about page page-cent" id="s-about-us">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>关于 我们<i class="ion ion-android-information">
+                            </i>
+                        </h3> 
+						<h2><span class="bold">A</span> young <span class="bold">team</span> </h2>
+                    </header>
+                    <article class="text">
+                        <p>爱好，兴趣，发现好玩，制作好玩<strong>志同道合的小伙伴请联系我</p>
+                        <p>主要业务：编程、游戏</p>
+                    </article>
+                </section>
+                <footer class="p-footer p-scrolldown">
+                    <a href="#contact">
+                        <div class="arrow-d">
+							<div class="before">Page&nbsp;down</div>
+							<div class="after">ComeBack</div>
+							<div class="circle"></div>
+						</div>
+                    </a>                        
+                </footer>
+            </div>
+            <!-- 关于我们页面结束-->
+                
+            <!-- 联系人页面开始-->
+            <div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact">
+				<!-- 联系信息开始-->
+				<div class="slide" id="information" data-anchor="information">
+					<section class="content">
+						<header class="p-title">
+							<h3>商务合作<i class="ion ion-location">
+								</i>
+							</h3>
+							<ul class="buttons">
+								<li class="show-for-medium-up">
+									<a title="About" href="#about-us" ><i class="ion ion-android-information"></i></a>
+								</li>
+								<!--<li>
+									<a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
+								</li>-->
+								<li>
+									<a title="Message" href="#contact/message"><i class="ion ion-email"></i></a>
+								</li>
+							</ul>
+						</header>
+						<!-- 页面开始子脚本-->
+						<div class="contact">
+							<div class="row">
+								<div class="medium-6 columns left">
+									<ul>
+										<li>
+											<h4>Email</h4>
+											<p><a href="mailto://46406444@qq.com">pcssboy@qq.com</a></p>
+										</li>
+										<li>
+											<h4>地址：</h4>
+											<p>浙江省
+											<br>温州市</p>
+										</li>
+										<li>
+											<h4>QQ/WX</h4>
+											<p>46406444</p>
+										</li>
+									</ul>
+								</div>
+								<div class="medium-6 columns social-links right">
+									<ul>
+
+										<!-- 法律通知-->
+										<li class="show-for-medium-up">
+											<h4>宏哥网络传媒</h4>
+											<p><a href="http://vske.top:83">http://vske.top</a></p>
+										</li>
+										<li  class="show-for-medium-up">
+											<h4></h4>
+											<!-- 开始社交链接-->
+											<div class="socialnet">
+												<a href="#"><i class="ion ion-social-qq"></i></a>
+												
+											</div>
+											<!-- 社交链接结束-->
+										</li>
+										<li>
+											<p><img src="icon/logo_large.png" alt="Logo" class="logo"></p>
+											<p class="small"> by <strong><a href="http://vske.top:81/">宏哥博客</a></strong>. All right reserved 2019-2025</p>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<!-- 页末小节-->
+					</section>  
+				</div>
+				<!-- 联系信息结束-->
+				
+				<!-- 联系信息的开头-->
+
+				<div class="slide" id="message" data-anchor="message">
+					<section class="content">
+						<header class="p-title">
+							<h3>留言<i class="ion ion-email">
+								</i>
+							</h3>
+							<ul class="buttons">
+								<li class="show-for-medium-up">
+									<a title="About" href="#about-us"><i class="ion ion-android-information"></i></a>
+								</li>
+								<li>
+									<a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
+								</li>
+								<!--<li>
+									<a title="Message" href="#contact/message"><i class="ion ion-email"></i></a>
+								</li>-->
+							</ul>
+						</header>
+						<!-- 页面开始子脚本-->
+						
+						<div class="page-block c-right v-zoomIn">
+							<div class="wrapper">
+								<div>
+									<form class="message form send_message_form" method="get" action="ajaxserver/serverfile.php">
+										<div class="fields clearfix">
+											<div class="input">
+												<label for="mes-name">姓名 </label>
+												<input id="mes-name" name="name" type="text" placeholder="姓名" required></div>
+											<div class="buttons">
+												<button id="submit-message" class="button email_b" name="submit_message">Ok</button>
+											</div>
+										</div>
+										<div class="fields clearfix">
+											<div class="input">
+												<label for="mes-email">邮箱 </label>
+												<input id="mes-email" type="email" placeholder="邮箱" name="email" required>
+											</div>
+										</div>
+										<div class="fields clearfix no-border">
+											<label for="mes-text">内容 </label>
+											<textarea id="mes-text" placeholder="内容" name="message" required></textarea>
+
+											<div>
+												<p class="message-ok invisible">我们收到了您的邮件，感谢！</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<!-- 页末子脚本-->
+					</section>
+						
+				</div>
+				<!-- 联系信息结束-->
+            </div>
+            <!-- 联系人页面结束-->
+ 
+        
+        </main>
+
+        <!-- 此处结束站点主要内容内容-->
+    <body class="body">
+    <div class="grid-music-container f-usn" id="music"></div><!-- 音乐播放器容器 -->
+    <div class="mini" title="最大化" id="mini"></div><!-- 最小化播放器按钮 -->
+   
+        <script>
+            new Music({ //新建播放器
+                musicList : musicList, //播放列表 
+            defaultMode : 1,   
+            // 初始播放音量 0 - 1.0 之间，增大默认音量
+            defaultVolume : 0.7,
+            // 设置自动播放
+            autoPlay: true
+        });
+        // 页面加载完成后执行
+        $(window).on("load",function() {
+            // 新建水纹效果
+            $(".jquery-ripples").ripples({ 
+                // 分辨率，细致程度
+                resolution: 112,  
+                // 水纹半径
+                dropRadius: 120,  
+                // 扰动系数，可以理解为水纹强度。
+                perturbance: 0.001,  
+                // 是否开启鼠标互动水纹
+                interactive : true  
+            });
+            // 调用播放器的 mini 方法，将播放器设置为最小化状态
+            musicPlayer.mini();
+            // 尝试自动播放
+            musicPlayer.play();
+        });
+       </script>
+
+        </body>
+    	<!-- 播放器加载结束 -->
+		
+		<!-- 网站页脚的开始-->
+		<footer class="page-footer">
+			<span>      <!-- 包含ICP备案图标和版权信息使用动态JavaScript显示当前年份-->
+      <img src="./icon/icp.png" alt="ICP备案图标" style="height: 20px; vertical-align: middle;">
+      Copyright&nbsp;&copy;&nbsp;2002-<script>document.write(new Date().getFullYear())</script>&nbsp;
+      <a href="https://icon-sets.iconify.design/" style="color: #ffffff;">iCon</a>&nbsp;&amp;&nbsp;
+      Made&nbsp;by&nbsp;<a href="http://vske.top:81/" target="_blank" style="color: #ffffff;">宏哥网络工作室</a>
+				
+			</span>
+		</footer>
+		<!-- 网站页脚结束-->
+
+        
+<!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+        
+        <!-- 所有Javascript插件都在此处-->
+<!--		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+        <script src="./js/vendor/jquery-1.11.2.min.js"></script>
+		<!-- 所有供应商脚本-->
+        <script src="./js/vendor/all.js"></script>
+		
+		<!-- 详细的供应商脚本-->
+        <!--<script src="./js/vendor/jquery.fullPage.min.js"></script>
+        <script src="./js/vendor/jquery.slimscroll.min.js"></script>
+        <script src="./js/vendor/jquery.knob.min.js"></script>
+        <script src="./js/vegas/vegas.min.js"></script>
+        <script src="./js/jquery.maximage.js"></script>
+        <script src="./js/okvideo.min.js"></script>-->
+		
+		
+		<!-- 递减JS-->
+        <script src="./js/jquery.downCount.js"></script>
+		
+		<!-- 表单脚本-->
+
+        <script src="./js/form_script.js"></script>
+        
+		<!-- Javascript主文件-->
+        <script src="./js/main.js"></script>
+         
+
+        <!-- Google Analytics: Uncomment and change UA-XXXXX-X to be your site"s ID. -->
+        <!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src="//www.google-analytics.com/analytics.js";
+            r.parentNode.insertBefore(e,r)}(window,document,"script","ga"));
+            ga("create","UA-XXXXX-X");ga("send","pageview");
+        </script>-->
+    </body>
+</html>

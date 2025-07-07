@@ -1,0 +1,586 @@
+﻿﻿/* 设置字符编码为 UTF-8 */
+﻿@charset "utf-8";
+/* 重置所有元素的外边距和内边距，设置一些基本样式 */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{
+    margin:0;
+    padding:0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    word-wrap:break-word;
+    font-size:inherit;
+    line-height:inherit;
+    overflow:visible
+}
+/* 设置 HTML5 元素的显示方式 */
+header,footer,section,article,aside,nav,address,figure,figcaption,menu,details{
+    display:block
+}
+/* 内联块级元素 */
+.f-ib{
+    display:inline-block
+}
+/* 内联元素 */
+.f-din{
+    display:inline
+}
+/* 隐藏元素 */
+.f-dn{
+    display:none
+}
+/* 块级元素 */
+.f-db{
+    display:block
+}
+/* 左浮动 */
+.f-fl{
+    float:left
+}
+/* 右浮动 */
+.f-fr{
+    float:right
+}
+/* 正常字体粗细 */
+.f-fwn{
+    font-weight:normal
+}
+/* 粗体字体粗细 */
+.f-fwb{
+    font-weight:bold
+}
+/* 左对齐文本 */
+.f-tal{
+    text-align:left
+}
+/* 居中对齐文本 */
+.f-tac{
+    text-align:center
+}
+/* 右对齐文本 */
+.f-tar{
+    text-align:right
+}
+/* 清除浮动 */
+.f-oh{
+    overflow:hidden;
+    zoom:1;
+    clear:both
+}
+/* 无下划线文本 */
+.f-tdn{
+    text-decoration:none !important
+}
+/* 垂直居中 */
+.f-vam,.f-vama *{
+    vertical-align:middle
+}
+/* 不换行文本 */
+.f-wsn{
+    word-wrap:normal;
+    white-space:nowrap
+}
+/* 预格式化文本 */
+.f-pre{
+    overflow:hidden;
+    text-align:left;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    word-break:break-all
+}
+/* 自动换行文本 */
+.f-wwb{
+    white-space:normal;
+    word-wrap:break-word;
+    word-break:break-all
+}
+/* 隐藏文本 */
+.f-ti{
+    overflow:hidden;
+    text-indent:-30000px
+}
+/* 正常行高 */
+.f-lhn{
+    line-height:normal
+}
+/* 文本溢出显示省略号 */
+.f-toe{
+    overflow:hidden;
+    word-wrap:normal !important;
+    white-space:nowrap;
+    text-overflow:ellipsis
+}
+/* 禁止用户选择文本 */
+.f-usn{
+    -webkit-user-select:none;
+    user-select:none
+}
+/* 盒模型为边框盒 */
+.f-bsb{
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+}
+/* 光标为指针 */
+.f-cp{
+    cursor:pointer
+}
+/* 设置滚动条样式 */
+::-webkit-scrollbar{
+    width:6px;
+    height:6px
+}
+::-webkit-scrollbar-button:vertical{
+    display:none
+}
+::-webkit-scrollbar-track:vertical{
+    background-color:transparent
+}
+::-webkit-scrollbar-track-piece{
+    background-color:transparent
+}
+::-webkit-scrollbar-thumb:vertical{
+    background-color:rgba(55,146,239,.3);
+    border-radius:6px
+}
+::-webkit-scrollbar-thumb:vertical:hover,::-webkit-scrollbar-thumb:vertical:active{
+    background-color:#2e86ef
+}
+/* 设置 HTML 和 body 的宽度和高度为 100%，隐藏溢出内容，设置字体 */
+html,body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    font-family:"Microsoft Yahei","微软雅黑","Helvetica Neue","Hiragino Sans GB",Helvetica,Tahoma,sans-serif
+}
+/* 音乐播放器容器样式 */
+.grid-music-container{
+    width:470px;
+    height:140px;
+    padding:10px;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    position:absolute;
+    top:100px;
+    left:100px;
+    background-color:rgba(255,255,255,.5);
+    text-shadow:1px 0 0 rgba(255,255,255,.7);
+    z-index:1;
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+/* 音乐播放区域样式 */
+.grid-music-container .m-music-play-wrap{
+    height:90px;
+    position:relative;
+    padding-left:130px;
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直排列子元素 */
+    justify-content: center; /* 垂直居中对齐 */
+}
+/* 水纹效果样式 */
+.jquery-ripples{
+    width:100%;
+    height:100%;
+    background:url("../img/bg.png");
+    background-position:center center;
+    background-size:cover;
+    transition:all .48s cubic-bezier(0.645,0.045,0.355,1);
+    -moz-transition:all .48s cubic-bezier(0.645,0.045,0.355,1);
+    -webkit-transition:all .48s cubic-bezier(0.645,0.045,0.355,1);
+    position:relative;
+    z-index:0
+}
+/* 音乐封面样式 */
+.grid-music-container .u-cover{
+    width:121px;
+    height:121px;
+    overflow:hidden;
+    background:url(../img/music_icons.png) 0 0 no-repeat;
+    position:absolute;
+    top:0;
+    left:0
+}
+/* 音乐封面图片样式 */
+.grid-music-container .u-cover img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:100%;
+    border-radius:50%
+}
+/* 音乐封面旋转动画 */
+.grid-music-container .u-cover.play{
+    -webkit-animation:Circle 10s linear infinite 0s forwards;
+    animation:Circle 10s linear infinite 0s forwards
+}
+/* 音乐封面暂停动画 */
+.grid-music-container .u-cover.paused{
+    -webkit-animation-play-state:paused;
+    animation-play-state:paused
+}
+/* 定义旋转动画 */
+@-webkit-keyframes Circle{
+    from{
+        -webkit-transform:rotate(0deg)
+    }
+    to{
+        -webkit-transform:rotate(360deg)
+    }
+}
+@keyframes Circle{
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
+/* 当前音乐信息样式 */
+.grid-music-container .m-now-info{
+    padding-top:10px;
+    margin-bottom: 10px; /* 增加底部间距 */
+}
+.grid-music-container .m-now-info h1 {
+    font-weight: normal;
+    padding-left: 35px; /* 内边距 30px */
+    text-align: left;   /* 确保文本左对齐 */
+}
+/* 当前音乐标题主要文字样式 */
+.grid-music-container .m-now-info h1 strong{
+    font-size:18px;
+    color:#111210;
+    font-weight:normal
+}
+/* 当前音乐标题次要文字样式 */
+.grid-music-container .m-now-info h1 small{
+    margin-left:20px;
+    font-size:14px;
+    color:#313230
+}
+/* 当前音乐控制区域样式 */
+.grid-music-container .m-now-controls{
+    position:relative;
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+/* 控制元素样式 */
+.grid-music-container .m-now-controls .u-control{
+    display:inline-block;
+    vertical-align:middle;
+    font-size:0;
+    overflow:hidden
+}
+/* 进度条样式 */
+.grid-music-container .m-now-controls .u-process{
+    width:220px;
+    height:8px;
+    position:relative;
+    background-color:#cecfd4;
+    cursor:pointer;
+    margin-right: 10px; /* 增加右边间距 */
+}
+/* 缓冲进度条样式 */
+.grid-music-container .m-now-controls .u-process .buffer-process,
+.grid-music-container .m-now-controls .u-process .current-process{
+    display:block;
+    width:0;
+    height:8px;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#3792ef
+}
+/* 缓冲进度条样式 */
+.grid-music-container .m-now-controls .u-process .buffer-process{
+    z-index:0;
+    background-color:#c1c2c0
+}
+/* 时间显示样式 */
+.grid-music-container .m-now-controls .u-time{
+    margin-right: 10px; /* 增加右边间距 */
+    font-size:12px;
+    color:#585957
+}
+/* 音量控制区域样式 */
+.grid-music-container .m-now-controls .u-volume{
+    overflow:visible;
+    text-align:center;
+    position:relative;
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+/* 音量进度条样式 */
+.grid-music-container .u-volume .volume-process{
+    width:3px;
+    height:50px;
+    background:#cecfd4;
+    position:absolute;
+    top:-54px;
+    left:6px;
+    cursor:pointer;
+    visibility:hidden
+}
+/* 显示音量进度条样式 */
+.grid-music-container .u-volume .volume-process.show{
+    visibility:visible
+}
+/* 音量当前进度样式 */
+.grid-music-container .u-volume .volume-process .volume-current,
+.grid-music-container .u-volume .volume-process .volume-event{
+    display:inline-block;
+    width:3px;
+    height:50%;
+    background-color:#3792ef;
+    position:absolute;
+    left:0;
+    bottom:0;
+    -webkit-transition:height .2s linear;
+    transition:height .2s linear
+}
+/* 音量事件区域样式 */
+.grid-music-container .u-volume .volume-process .volume-event{
+    width:21px;
+    left:-10px;
+    background:0;
+    height:100%
+}
+/* 音量调节按钮样式 */
+.grid-music-container .u-volume .volume-process .volume-bar{
+    display:inline-block;
+    width:8px;
+    height:8px;
+    border-radius:100%;
+    background-color:#fff;
+    border:1px solid #a8a9a7;
+    position:absolute;
+    left:-3px;
+    bottom:50%;
+    -webkit-transition:bottom .2s linear;
+    transition:bottom .2s linear
+}
+/* 音量调节按钮悬停和激活样式 */
+.grid-music-container .u-volume .volume-process .volume-bar:hover,
+.grid-music-container .u-volume .volume-process .volume-bar:active{
+    background-color:#f1f2f0
+}
+/* 音量控制按钮样式 */
+.grid-music-container .u-volume .volume-control{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url(../img/music_icons.png) -140px -80px no-repeat;
+    cursor:pointer;
+}
+/* 音量控制按钮悬停样式 */
+.grid-music-container .u-volume .volume-control:hover{
+    background-position:-158px -80px
+}
+/* 静音状态下的音量控制按钮样式 */
+.grid-music-container .u-volume .volume-control.muted{
+    background-position:-140px -98px
+}
+/* 静音状态下的音量控制按钮悬停样式 */
+.grid-music-container .u-volume .volume-control.muted:hover{
+    background-position:-158px -98px
+}
+/* 播放控制区域样式 */
+.grid-music-container .m-play-controls{
+    width:250px;
+    margin-top:15px;
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+/* 播放控制按钮样式 */
+.grid-music-container .m-play-controls a{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right: 15px; /* 统一按钮右边间距 */
+}
+/* 播放按钮样式 */
+.grid-music-container .m-play-controls .u-play-btn{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+/* 播放按钮基本样式 */
+.u-play-btn{
+    background:url(../img/music_icons.png) -220px 0 no-repeat
+}
+/* 上一曲和下一曲按钮样式 */
+.u-play-btn.prev,.u-play-btn.next{
+    background-position:-220px 0
+}
+/* 上一曲和下一曲按钮悬停样式 */
+.u-play-btn.prev:hover,.u-play-btn.next:hover{
+    background-position:-220px -36px
+}
+/* 上一曲按钮旋转样式 */
+.u-play-btn.prev{
+    -webkit-transform:rotate(-180deg);
+    transform:rotate(-180deg)
+}
+/* 播放状态下的播放按钮样式 */
+.u-play-btn.play{
+    background-position:-250px 0
+}
+/* 播放状态下的播放按钮悬停样式 */
+.u-play-btn.play:hover{
+    background-position:-250px -36px
+}
+/* 暂停状态下的播放按钮样式 */
+.u-play-btn.paused{
+    background-position:-280px 0
+}
+/* 暂停状态下的播放按钮悬停样式 */
+.u-play-btn.paused:hover{
+    background-position:-280px -36px
+}
+/* 播放模式按钮样式 */
+.u-play-btn.mode{
+    width:20px !important;
+    height:18px !important;
+    margin-right:10px !important
+}
+/* 列表循环模式按钮样式 */
+.u-play-btn.mode-list{
+    background-position:-181px -98px;
+    margin-left:65px
+}
+/* 当前选中的列表循环模式按钮样式 */
+.u-play-btn.mode-list.current{
+    background-position:-221px -98px
+}
+/* 随机播放模式按钮样式 */
+.u-play-btn.mode-random{
+    background-position:-201px -80px
+}
+/* 当前选中的随机播放模式按钮样式 */
+.u-play-btn.mode-random.current{
+    background-position:-241px -80px
+}
+/* 单曲循环模式按钮样式 */
+.u-play-btn.mode-single{
+    background-position:-181px -80px
+}
+/* 当前选中的单曲循环模式按钮样式 */
+.u-play-btn.mode-single.current{
+    background-position:-221px -80px
+}
+/* 最小化按钮样式 =====================================================
+    top:25px;                /* 距离顶部25像素 
+    left:15px;               /* 距离左侧15像素 
+	------------------------------------------------------------------
+    bottom:45px;             /* 距离底部45像素 
+    right:15px;              /* 距离右侧15像素 	
+	使用上面这组可以设置最小化按钮靠左的位置。
+	===================================================================
+*/
+.mini{
+    width:48px;              /* 按钮宽度为48像素 */
+    height:48px;             /* 按钮高度为48像素 */
+    bottom:25px;             /* 距离底部45像素 */
+    right:15px;              /* 距离右侧15像素 */
+    background:url(../img/player.png); /* 设置背景图片 */
+    position:absolute;       /* 绝对定位，相对于最近的已定位祖先元素 */
+    z-index:1;               /* 设置元素的堆叠顺序为1 */
+}
+
+/* 最大化按钮样式====================================================== */
+.max{
+    width:24px;              /* 按钮宽度为24像素 */
+    height:18px;             /* 按钮高度为18像素 */
+    margin-left:280px;       /* 左外边距为280像素 */
+    margin-top:6px;          /* 上外边距为6像素 */
+    background:url(../img/mini.png); /* 设置背景图片 */
+    position:absolute;       /* 绝对定位，相对于最近的已定位祖先元素 */
+}
+
+/* 平板设备适配 */
+@media (max-width: 768px) {
+    .grid-music-container {
+        width: 90%;
+        left: 5%;
+        top: 50px;
+    }
+
+    .grid-music-container .m-music-play-wrap {
+        padding-left: 120px;
+    }
+
+    .grid-music-container .u-cover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .grid-music-container .m-now-info h1 strong {
+        font-size: 16px;
+    }
+
+    .grid-music-container .m-now-info h1 small {
+        font-size: 12px;
+    }
+
+    .grid-music-container .m-now-controls .u-process {
+        width: 150px;
+    }
+
+    .grid-music-container .m-play-controls {
+        width: auto;
+    }
+
+    .u-play-btn.mode-list {
+        margin-left: 30px;
+    }
+}
+
+/* 手机设备适配 */
+@media (max-width: 480px) {
+    .grid-music-container {
+        width: 95%;
+        left: 2.5%;
+        top: 20px;
+    }
+
+    .grid-music-container .m-music-play-wrap {
+        padding-left: 80px;
+    }
+
+    .grid-music-container .u-cover {
+        width: 60px;
+        height: 60px;
+    }
+
+    .grid-music-container .m-now-info h1 strong {
+        font-size: 14px;
+    }
+
+    .grid-music-container .m-now-info h1 small {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .grid-music-container .m-now-controls .u-process {
+        width: 100px;
+    }
+
+    .grid-music-container .m-play-controls a {
+        margin-right: 10px;
+    }
+
+    .grid-music-container .m-play-controls .u-play-btn {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .u-play-btn.mode {
+        width: 18px !important;
+        height: 16px !important;
+        margin-right: 8px !important;
+    }
+
+    .u-play-btn.mode-list {
+        margin-left: 15px;
+    }
+}
